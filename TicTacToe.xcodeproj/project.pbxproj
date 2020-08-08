@@ -11,6 +11,7 @@
 		9053AD4C24DB89BA00CC9C1C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AD4B24DB89BA00CC9C1C /* ContentView.swift */; };
 		9053AD4E24DB89BC00CC9C1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9053AD4D24DB89BC00CC9C1C /* Assets.xcassets */; };
 		9053AD5124DB89BC00CC9C1C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9053AD5024DB89BC00CC9C1C /* Preview Assets.xcassets */; };
+		9053AD5924DBBE3A00CC9C1C /* Square.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9053AD5824DBBE3A00CC9C1C /* Square.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		9053AD4D24DB89BC00CC9C1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9053AD5024DB89BC00CC9C1C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9053AD5224DB89BC00CC9C1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9053AD5824DBBE3A00CC9C1C /* Square.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Square.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				9053AD4924DB89B900CC9C1C /* TicTacToeApp.swift */,
 				9053AD4B24DB89BA00CC9C1C /* ContentView.swift */,
+				9053AD5824DBBE3A00CC9C1C /* Square.swift */,
 				9053AD4D24DB89BC00CC9C1C /* Assets.xcassets */,
 				9053AD5224DB89BC00CC9C1C /* Info.plist */,
 				9053AD4F24DB89BC00CC9C1C /* Preview Content */,
@@ -85,6 +88,8 @@
 			dependencies = (
 			);
 			name = TicTacToe;
+			packageProductDependencies = (
+			);
 			productName = TicTacToe;
 			productReference = 9053AD4624DB89B900CC9C1C /* TicTacToe.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +117,8 @@
 				Base,
 			);
 			mainGroup = 9053AD3D24DB89B900CC9C1C;
+			packageReferences = (
+			);
 			productRefGroup = 9053AD4724DB89B900CC9C1C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,6 +147,7 @@
 			files = (
 				9053AD4C24DB89BA00CC9C1C /* ContentView.swift in Sources */,
 				9053AD4A24DB89B900CC9C1C /* TicTacToeApp.swift in Sources */,
+				9053AD5924DBBE3A00CC9C1C /* Square.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
