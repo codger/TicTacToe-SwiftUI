@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct Square: Shape {
-  var shape : Int
+  var shape: Int
   func path(in rect: CGRect) -> Path {
     var path = Path()
-    let inset : CGFloat = 20.0
-    if shape == 1{
+    let inset: CGFloat = 20.0
+    if shape == 1 {
       path.move(to: CGPoint(x: rect.minX + inset, y: rect.maxY - inset))
       path.addLine(to: CGPoint(x: rect.maxX - inset, y: rect.minY + inset))
       path.move(to: CGPoint(x: rect.minX + inset, y: rect.minY + inset))
@@ -27,15 +27,18 @@ struct Square: Shape {
 
 struct Square_Previews: PreviewProvider {
   static var previews: some View {
-    GeometryReader {geom in
-      ZStack{
-      Square(shape: 1)
-        .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
-        .aspectRatio(1, contentMode: .fit)
+    GeometryReader { geom in
+      VStack {
+        Square(shape: 1)
+          .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
+          .aspectRatio(1, contentMode: .fit)
+        Square(shape: 0)
+          .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
+          .aspectRatio(1, contentMode: .fit)
         Square(shape: 2)
           .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
           .aspectRatio(1, contentMode: .fit)
-    }
+      }
     }
   }
 }
