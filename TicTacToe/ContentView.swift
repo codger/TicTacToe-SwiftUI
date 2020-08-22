@@ -76,9 +76,9 @@ struct ContentView: View {
 
   func haveWinner() {
     for row in winRows {
-      if squares[row[0]] == squares[row[1]] {
-        if squares[row[0]] == squares[row[2]] {
-          if squares[row[0]] != 0 {
+      if squares[row[0]] != 0 {
+        if squares[row[0]] == squares[row[1]] {
+          if squares[row[0]] == squares[row[2]] {
             winner = true
           }
         }

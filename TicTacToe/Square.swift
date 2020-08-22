@@ -28,7 +28,7 @@ struct Square: Shape {
 struct Square_Previews: PreviewProvider {
   static var previews: some View {
     GeometryReader { geom in
-      VStack {
+      HStack {
         Square(shape: 1)
           .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
           .aspectRatio(1, contentMode: .fit)
@@ -36,7 +36,7 @@ struct Square_Previews: PreviewProvider {
           .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
           .aspectRatio(1, contentMode: .fit)
         Square(shape: 2)
-          .stroke(Color.red, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
+          .stroke(Color.green, style: StrokeStyle(lineWidth: geom.size.width / 10.0, lineCap: .round, lineJoin: .round))
           .aspectRatio(1, contentMode: .fit)
       }
     }
